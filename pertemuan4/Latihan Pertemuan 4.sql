@@ -16,7 +16,7 @@ SELECT TOP(5) * FROM dpp_mahasiswa ORDER BY jumlah_pembayaran DESC;
 SELECT DISTINCT dosen_pengajar FROM jadwal_mata_kuliah;
 
 -- Soal 6
-SELECT COUNT(kode_mata_kuliah) AS TOTAL_MATKUL FROM jadwal_mata_kuliah WHERE hari = 'Senin';
+SELECT COUNT(nama_mata_kuliah) AS Total_Matkul_Senin  FROM jadwal_mata_kuliah WHERE hari = 'Senin';
 
 -- Soal 7
 SELECT nama_mata_kuliah, kode_mata_kuliah FROM jadwal_mata_kuliah WHERE kode_mata_kuliah IN ('TI101', 'SI201', 'TS301');
